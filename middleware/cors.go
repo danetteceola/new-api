@@ -8,10 +8,15 @@ import (
 
 func CORS() gin.HandlerFunc {
 	config := cors.DefaultConfig()
-	config.AllowAllOrigins = true
+	config.AllowOrigins = []string{
+		"https://www.cheaprouter.club",
+		"https://cheaprouter.club",
+		"http://www.houtai.io",
+		"http://houtai.io",
+	}
 	config.AllowCredentials = true
 	config.AllowMethods = []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}
-	config.AllowHeaders = []string{"*"}
+	config.AllowHeaders = []string{"Authorization", "Content-Type", "New-Api-User"}
 	return cors.New(config)
 }
 
