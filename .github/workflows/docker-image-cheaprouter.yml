@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: danetteceola/cheaprouter-backend/new-api
+  IMAGE_NAME: danetteceola/new-api
 
 jobs:
   build-and-push:
