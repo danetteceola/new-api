@@ -13,6 +13,7 @@ func CORS() gin.HandlerFunc {
 		"https://cheaprouter.club",
 		"http://www.houtai.io",
 		"http://houtai.io",
+		"http://localhost:3001",
 	}
 	config.AllowCredentials = true
 	config.AllowMethods = []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}
