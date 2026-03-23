@@ -11,6 +11,9 @@ func CORS() gin.HandlerFunc {
 	config.AllowOrigins = []string{
 		"https://www.cheaprouter.club",
 		"https://cheaprouter.club",
+		"https://www.a9token.club",
+		"https://a9token.club",
+		"https://api.a9token.club",
 		"http://www.houtai.io",
 		"http://houtai.io",
 		"http://localhost:3001",
